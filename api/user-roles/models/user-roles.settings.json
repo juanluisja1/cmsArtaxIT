@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_roles",
+  "info": {
+    "name": "user_roles",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "admin_flag": {
+      "type": "boolean"
+    },
+    "support_flag": {
+      "type": "boolean"
+    },
+    "customer_flag": {
+      "type": "boolean"
+    },
+    "customers": {
+      "via": "user_role",
+      "collection": "customer"
+    },
+    "role_name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

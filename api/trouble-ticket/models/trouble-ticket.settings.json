@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trouble_tickets",
+  "info": {
+    "name": "trouble_ticket"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "issue": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "media": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "datetime": {
+      "type": "datetime",
+      "required": true
+    },
+    "priority": {
+      "type": "integer",
+      "private": true,
+      "max": 3
+    },
+    "status": {
+      "type": "boolean",
+      "default": true,
+      "private": true
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payment_details",
+  "info": {
+    "name": "payment_details"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "payment_state": {
+      "type": "boolean"
+    },
+    "date_issued": {
+      "type": "date"
+    },
+    "date_expires": {
+      "type": "date"
+    },
+    "amount": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscriptions",
+  "info": {
+    "name": "subscription",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "subscription_start": {
+      "type": "datetime"
+    },
+    "flag_active": {
+      "type": "boolean"
+    },
+    "customers": {
+      "collection": "customer"
+    },
+    "subscriptions_details": {
+      "collection": "subscrition-details"
+    },
+    "payments": {
+      "collection": "payment"
+    }
+  }
+}

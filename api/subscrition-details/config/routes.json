@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/subscrition-details",
+      "handler": "subscrition-details.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subscrition-details/count",
+      "handler": "subscrition-details.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/subscrition-details/:id",
+      "handler": "subscrition-details.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/subscrition-details",
+      "handler": "subscrition-details.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/subscrition-details/:id",
+      "handler": "subscrition-details.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/subscrition-details/:id",
+      "handler": "subscrition-details.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

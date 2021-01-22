@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customer",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "company_name": {
+      "type": "string"
+    },
+    "user_role": {
+      "model": "user-roles",
+      "via": "customers"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "username": {
+      "type": "uid",
+      "targetField": "user_name"
+    },
+    "password": {
+      "type": "password"
+    },
+    "email": {
+      "type": "email"
+    },
+    "trouble_tickets": {
+      "collection": "trouble-ticket"
+    }
+  }
+}

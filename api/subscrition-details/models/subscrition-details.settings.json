@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "subscrition_details",
+  "info": {
+    "name": "subscriptions_details",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date_started": {
+      "type": "date"
+    },
+    "time_started": {
+      "type": "datetime"
+    },
+    "flag_active": {
+      "type": "boolean"
+    },
+    "name_type": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    }
+  }
+}
